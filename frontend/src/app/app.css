@@ -1,7 +1,8 @@
 .navbar {
-  background: #2c3e50;
+  background: var(--white);
   padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-bottom: 1px solid var(--gray-accent);
 }
 
 .nav-container {
@@ -14,9 +15,10 @@
 }
 
 .nav-title {
-  color: white;
+  color: var(--primary-dark);
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
 .nav-menu {
@@ -28,16 +30,18 @@
 }
 
 .nav-menu a {
-  color: white;
+  color: var(--primary-dark);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
-  background-color: #34495e;
+  background-color: var(--primary-blue);
+  color: var(--white);
 }
 
 .main-content {
