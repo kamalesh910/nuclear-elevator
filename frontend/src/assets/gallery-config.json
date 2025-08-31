@@ -1,0 +1,22 @@
+{
+  "modern-office": {
+    "title": "Modern Office Elevator",
+    "description": "Sleek design for corporate buildings",
+    "imageCount": 9
+  },
+  "residential": {
+    "title": "Residential Elevator",
+    "description": "Luxury home elevator installation",
+    "imageCount": 5
+  },
+  "hospital": {
+    "title": "Hospital Elevator",
+    "description": "Medical facility elevator system",
+    "imageCount": 4
+  },
+  "shopping-mall": {
+    "title": "Shopping Mall Elevator",
+    "description": "High-capacity commercial elevator",
+    "imageCount": 7
+  }
+}

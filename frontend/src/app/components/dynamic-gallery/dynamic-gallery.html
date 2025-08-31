@@ -1,0 +1,24 @@
+<div class="gallery-overlay" *ngIf="isVisible">
+  <div class="gallery-modal">
+    <div class="gallery-header">
+      <h2>{{ sectionTitle }}</h2>
+      <button class="close-btn" (click)="closeGallery()">&times;</button>
+    </div>
+    
+    <div class="loading" *ngIf="loading">Loading images...</div>
+    
+    <div class="gallery-grid" *ngIf="!loading && images.length > 0">
+      <div class="gallery-item" *ngFor="let image of images; trackBy: trackByImage">
+        <img 
+          [src]="image" 
+          [alt]="sectionTitle + ' image'"
+          (error)="onImageError($event)"
+          loading="lazy">
+      </div>
+    </div>
+    
+    <div class="no-images" *ngIf="!loading && images.length === 0">
+      No images available for this section.
+    </div>
+  </div>
+</div>
